@@ -11,11 +11,11 @@ import { Avatar } from '@material-ui/core';
 
 
  function Sidebar() {
+  
   return (
     <div className='sidebar'>
         <div className='sidebar_header'>
         <div className='userIcon'>
-        {/* <FontAwesomeIcon  icon={faUserCircle}/>  */}
         <Avatar src={`https://api.dicebear.com/5.x/adventurer/svg?seed=Ginger`}/>
         </div> 
          <div className='sidebar_headerRight'>
