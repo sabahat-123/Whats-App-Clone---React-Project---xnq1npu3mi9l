@@ -6,9 +6,7 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import SidebarChat from './SidebarChat';
 import { Avatar } from '@material-ui/core';
-
-
-
+import {contactList} from '../Data'
 
  function Sidebar() {
   
@@ -31,19 +29,9 @@ import { Avatar } from '@material-ui/core';
             </div>
         </div>
         <div className='sidebar_chat'>
-           <SidebarChat addnewchat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/>
-           <SidebarChat/> 
+          {contactList.map((userData)=>(
+          <SidebarChat userData={userData}/>
+        ))}
         </div>
     </div>
   )

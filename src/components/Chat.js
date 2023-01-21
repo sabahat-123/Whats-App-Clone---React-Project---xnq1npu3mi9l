@@ -18,7 +18,7 @@ function Chat() {
          <p>Last seen...</p>               
         </div>
         <div className="header__right">
-        <FontAwesomeIcon icon={faSearch}/>
+        <FontAwesomeIcon icon={faSearch} />
         <FontAwesomeIcon icon={faPaperclip}/>
         <FontAwesomeIcon icon={faEllipsisVertical} />           
         </div>

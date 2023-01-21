@@ -99,6 +99,18 @@
     height: 30px;
     margin-left: 15px;
 }
+.contactList .timeSpan{
+    position: relative;
+    font-size: 14px;
+    margin: auto;
+    color: rgba (0,0,0,0.8);
+}
+.lastSeen{
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+
+}
 /* sidebar style complete */
 /* chat section start */
 .chat{
