@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
@@ -6,9 +6,20 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import SidebarChat from './SidebarChat';
 import { Avatar } from '@material-ui/core';
-import {contactList} from '../Data'
+import { db } from '../Firebase';
+//import {contactList} from '../Data'
 
  function Sidebar() {
+  const[rooms, setRooms] = useState([])
+  useEffect(()=>{
+     db.collection("rooms").onSnapshot(snapshot=>{
+        setRooms(snapshot.docs.map(docs=>({
+          id:docs.id,
+          data:docs.data()
+        })))
+     })
+  },[])
+  console.log(rooms)
   
   return (
     <div className='sidebar'>
@@ -29,9 +40,12 @@ import {contactList} from '../Data'
             </div>
         </div>
         <div className='sidebar_chat'>
-          {contactList.map((userData)=>(
-          <SidebarChat userData={userData}/>
-        ))}
+        <SidebarChat addnewchat/>
+        {
+          rooms.map(room=>{
+            return <SidebarChat key={room.id} id={room.id} name={room.data.name}/>
+          })
+        }
         </div>
     </div>
   )

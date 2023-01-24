@@ -6,9 +6,12 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
 
 
 function Chat() {
+  const [roomId] = useParams();
+  console.log(roomId);
   return (
     <div className='chat'>
       <div className='chat_header'>
