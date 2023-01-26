@@ -11,4 +11,9 @@
 </ul>
 <h2>Project UI Design</h2>
 <img src="https://spiky-theory-17e.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc60d8c66-19cb-48dc-918b-101f77d1d0ce%2FTA_(2).png?id=e0768daf-afef-4910-89a3-618f4a11a7e6&table=block&spaceId=7c10cb66-b136-4012-8662-1f199364e360&width=2000&userId=&cache=v2">
-<img src="src/whatsApp.png">
+
+<h3>Tech Stack Prerequisite:</h3><p> HTML, CSS, JavaScript, React ,firebase , API</p>
+
+<h3>Descriptions :</h3> <p>WhatsApp Web UI Clone is a react-based app with a functional add to new chat , Send message features , dynamically profile dp from APi and send message time is real time showing  .This whatsApp  clone is open on your desktop and Laptop .</p>
+
+ 
