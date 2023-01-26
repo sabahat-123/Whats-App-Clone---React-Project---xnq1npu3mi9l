@@ -6,11 +6,12 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import SidebarChat from './SidebarChat';
 import { Avatar } from '@material-ui/core';
-import { db } from '../Firebase';
-//import {contactList} from '../Data'
+import { db } from '../firebase';
+
 
  function Sidebar() {
-  const[rooms, setRooms] = useState([])
+  const[rooms, setRooms] = useState([]);
+
   useEffect(()=>{
      db.collection("rooms").onSnapshot(snapshot=>{
         setRooms(snapshot.docs.map(docs=>({
@@ -19,7 +20,9 @@ import { db } from '../Firebase';
         })))
      })
   },[])
-  console.log(rooms)
+
+  
+
   
   return (
     <div className='sidebar'>
@@ -36,7 +39,7 @@ import { db } from '../Firebase';
         <div className='sidebar_search'>
             <div className='sidebar_searchContainer'>
             <FontAwesomeIcon icon={faSearch}/>
-            <input type="text" placeholder='Search Name'/>
+            <input type="text"  placeholder='Search Name' />
             </div>
         </div>
         <div className='sidebar_chat'>

@@ -11,7 +11,7 @@
     display: grid;
     place-items: center;
 }
-.body_app{
+.app__body{
     background-color: #ededed;
     height: 90vh;
     width: 90vw;
@@ -78,6 +78,10 @@
     border-bottom: 1px solid #eaeaea;
     padding: 10px;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
 .contactList:hover{
     cursor: pointer;
     background-color: #ebebeb;
@@ -101,6 +105,7 @@
     height: 30px;
     margin-left: 15px;
 }
+
 .contactList .timeSpan{
     position: relative;
     font-size: 14px;
@@ -216,3 +221,35 @@
 
 
 /* chat section end */
+/* login page style start */
+.login__wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.login {
+    width: 400px;
+    background-color: rgb(223,223,233);
+    padding:20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.login img {
+    width: 100px;
+}
+
+.login h2 {
+    margin:20px 0px
+}
+
+.login button {
+   background-color: #3fc350;
+   color:#fff;
+   border:0px;
+   padding:10px 20px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   cursor: pointer;
+   margin-top: 20px;
+}
+/* login page style end */
