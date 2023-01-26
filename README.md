@@ -10,4 +10,4 @@
 <li>If you text a message in the message box and send it . It shows real time .</li>
 </ul>
 <h2>Project UI Design</h2>
-<img src="image.png">
+<img src="C:\Users\sabahat.parveen\Pictures\Screenshots\Screenshot (1).png">
