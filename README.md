@@ -15,6 +15,6 @@
 <h3>Tech Stack Prerequisite:</h3><p> HTML, CSS, JavaScript, React ,firebase , API</p>
 
 <h3>Descriptions :</h3> <p>WhatsApp Web UI Clone is a react-based app with a functional add to new chat , Send message features , dynamically profile dp from APi and send message time is real time showing  .This whatsApp  clone is open on your desktop and Laptop .</p>
-<img src="https://ornate-tanuki-eea4f6.netlify.app/">
+
 
  
