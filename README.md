@@ -1,20 +1,13 @@
 # boilerplate-react-functional-public
 
-In this app we will be making a Word and Character counter app.
-First there needs to be a <code>textarea</code> element which will take the input
-from user.
-
-Below that element, create 2 divs with id="word-counter" and id="char-counter" respectively.
-#word-counter will show the number of words(empty space is not considered a word) and #char-counter will show the number of characters typed.
-
-Also make an input with id="char-limit-input" which takes a number which is the limit of characters we can type in.
-By default char limit should be 50.
-
-And the last input should be a slider input(with id ="fontSize-input") for taking the font size, default and min value should be 16px and max would be 32px.
-
-Apply the fontSize property to the textarea element.
-
-
-
-Demo video:-
-<video src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/e449406acecb4a1186ae9cc77a55933f.mp4" controls autoplay muted>
+<h1>WhatsApp Clone</h1>
+<p>Features of Project</p>
+<ul>
+<li>Click on Add to new chat and create a new room  </li>
+<li>Click on the chat room and enter the room and send a free message .</li>
+<li>I used firebase for user data collection .</li>
+<li>I used an api for user profile DP .</li>
+<li>If you text a message in the message box and send it . It shows real time .</li>
+</ul>
+<h2>Project UI Design</h2>
+<img src="image.png">
