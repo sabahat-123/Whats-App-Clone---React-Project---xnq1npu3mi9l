@@ -147,6 +147,7 @@ a{
 
 .chat__headerInfo p{
     font-size: 12px;
+    padding-top: 5px;
 }
 .header__right{
     display: flex;
