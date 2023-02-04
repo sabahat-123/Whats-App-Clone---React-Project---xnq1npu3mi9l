@@ -9,6 +9,7 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
 import firebase from 'firebase/compat';
 import { db } from '../firebase';
+import { useStateValue } from './StateProvider';
 
 
 
@@ -17,6 +18,7 @@ function Chat() {
   const [roomName, setRoomName] = useState("");
   const [input, setInput] = useState("");
   const [messages , setMessages] = useState([]);
+  const [{user} , dispatch] = useStateValue();
   useEffect(()=>{
     if(roomId){
       db.collection("rooms").doc(roomId).onSnapshot(snapshot=> {
@@ -38,7 +40,7 @@ function Chat() {
     }
     
     db.collection("rooms").doc(roomId).collection("message").add({
-        name:"sabahat parveen",
+        name:user.displayName,
         message:input,
         timestamp:firebase.firestore.FieldValue.serverTimestamp()
     });
@@ -62,7 +64,7 @@ function Chat() {
       <div className='chat_body'>
         {
           messages.map(message=>(
-            <p className='chat_message chat_reciver'>
+            <p className={`chat_message ${user.displayName==message.name && "chat_reciver"}`}>
            <span className='chat_name'>{message.name}</span>
            {message.message}
            <span className='chat_time'>
